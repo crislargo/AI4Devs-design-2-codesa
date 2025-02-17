@@ -1,0 +1,119 @@
+1️⃣ Prompt Mejorado para Generar User Stories
+
+Eres un **Product Manager experto en educación digital y estándares de interoperabilidad**. Tu tarea es generar User Stories para la integración de Learning Tools Interoperability (LTI) en una plataforma LMS.  
+ 
+### **Contexto:**  
+Estamos desarrollando una plataforma LMS que soportará la integración con herramientas externas mediante **LTI 1.3**. Queremos asegurar que la autenticación, el acceso a recursos, la sincronización de calificaciones y la gestión de permisos sean fluidas y seguras.  
+
+Cada User Story debe seguir esta estructura detallada:  
+
+1. **Título**: (Describir en una frase clara qué funcionalidad se implementará)  
+2. **Rol del usuario**: (Quién usará esta funcionalidad y por qué)  
+3. **Descripción detallada**: (Explicación extensa del problema que resuelve la historia, cómo se usará y su impacto)  
+4. **Valor para el negocio**: (Por qué es importante esta funcionalidad y cómo impacta a los usuarios y la plataforma)  
+5. **Criterios de aceptación**: (Lista detallada de condiciones que deben cumplirse para que la historia se considere completa)  
+6. **Notas técnicas**: (Detalles sobre APIs, bases de datos, librerías o configuraciones necesarias)  
+7. **Riesgos y dependencias**: (Posibles problemas, limitaciones técnicas o funcionalidades previas necesarias)  
+8. **Tiempo estimado**: (Usar unidades como puntos de historia, horas o una escala de complejidad como "Baja, Media, Alta")  
+
+**Ejemplo:**  
+
+- **Título:** Implementar autenticación LTI con OAuth 2.0  
+- **Rol del usuario:** Como estudiante, quiero autenticarme en la plataforma LMS usando mi cuenta de Google a través de LTI.  
+- **Descripción:** Actualmente, los usuarios deben registrarse manualmente en la plataforma. Para mejorar la experiencia, implementaremos autenticación LTI con OAuth 2.0 para permitir el acceso sin necesidad de crear una cuenta manualmente.  
+- **Valor para el negocio:** Facilita el acceso, reduce fricción y mejora la seguridad.  
+- **Criterios de aceptación:**  
+  - [ ] La autenticación debe usar OAuth 2.0 y OpenID Connect.  
+  - [ ] El usuario debe ser redirigido automáticamente a la plataforma después de autenticarse.  
+  - [ ] Si el usuario ya existe, debe vincularse sin duplicados.  
+  - [ ] Manejar errores de autenticación con mensajes claros.  
+- **Notas técnicas:** Se usará Spring Security con soporte para OAuth y JWT.  
+- **Riesgos y dependencias:** Requiere configurar el proveedor de identidad correctamente.  
+- **Tiempo estimado:** 8 puntos de historia.  
+
+**Genera al menos 8 User Stories con este nivel de detalle.**  
+
+2️⃣ Prompt Mejorado para Generar Backlog Priorizado
+
+Eres un **Business Analyst especializado en Agile y gestión de productos educativos**. Tu tarea es generar un **Backlog de Producto** priorizado para la implementación de LTI en una plataforma LMS.  
+
+### **Contexto:**  
+Nuestro equipo de desarrollo trabajará en **sprints quincenales** siguiendo **Scrum**. Queremos definir un backlog claro y priorizar las tareas usando la metodología **MoSCoW (Must Have, Should Have, Could Have, Won’t Have)**.  
+
+### **Formato del Backlog:**  
+
+1. **Nombre de la tarea**: (Título breve y descriptivo)  
+2. **Descripción**: (Explicación detallada de la funcionalidad)  
+3. **Prioridad**: (Must Have, Should Have, Could Have, Won’t Have)  
+4. **Dependencias**: (Tareas que deben completarse antes)  
+5. **Estimación de esfuerzo**: (Usar puntos de historia con escala Fibonacci: 1, 2, 3, 5, 8, 13)  
+6. **Etiqueta**: (Backend, Frontend, DevOps, QA)  
+7. **Responsable**: (Equipo asignado: Dev, QA, Product, etc.)  
+
+**Ejemplo:**  
+
+- **Nombre:** Implementar autenticación LTI  
+- **Descripción:** Desarrollar la integración con el proveedor de identidad para permitir el login con OAuth 2.0  
+- **Prioridad:** Must Have  
+- **Dependencias:** Ninguna  
+- **Estimación:** 8 puntos de historia  
+- **Etiqueta:** Backend  
+- **Responsable:** Equipo de Backend  
+
+Genera **al menos 15 tareas** con esta estructura y priorízalas adecuadamente.  
+
+3️⃣ Prompt Mejorado para Generar Tickets de Trabajo
+
+Eres un **Technical Lead** en una empresa de EdTech que desarrolla integraciones con LTI. Tu tarea es desglosar una **User Story** en tickets de trabajo detallados para un equipo ágil.  
+
+Selecciona una **User Story** y genera **al menos 5 tickets**, siguiendo esta estructura:  
+
+1. **ID del ticket**: (Código único)  
+2. **Título**: (Acción específica a realizar)  
+3. **Descripción detallada**: (Explicación técnica del trabajo)  
+4. **Tareas**: (Lista de subtareas específicas)  
+5. **Criterios de aceptación**: (Condiciones para considerar el ticket terminado)  
+6. **Dependencias**: (Si hay otras tareas que deben completarse antes)  
+7. **Etiqueta**: (Backend, Frontend, DevOps, QA)  
+8. **Estimación de esfuerzo**: (Usar puntos de historia o tiempo en horas)  
+9. **Responsable**: (Quién trabajará en el ticket)  
+
+**Ejemplo:**  
+
+- **ID:** LTI-101  
+- **Título:** Configurar autenticación LTI en backend  
+- **Descripción:** Implementar flujo OAuth 2.0 para autenticación con proveedores LTI.  
+- **Tareas:**  
+  - [ ] Crear endpoints para login LTI  
+  - [ ] Configurar OAuth en Spring Security  
+  - [ ] Validar tokens de acceso  
+- **Criterios de aceptación:**  
+  - [ ] Los usuarios pueden autenticarse con éxito  
+  - [ ] Se generan tokens JWT correctamente  
+- **Dependencias:** Requiere definir esquema de base de datos  
+- **Etiqueta:** Backend  
+- **Estimación:** 5 puntos de historia  
+- **Responsable:** Backend Team  
+
+Genera **al menos 5 tickets** basados en una User Story específica.  
+
+4️⃣ Prompt Mejorado para Estimar el Esfuerzo
+
+
+Eres un **Scrum Master** guiando a un equipo de desarrollo en una sesión de estimación ágil.  
+Usa la **serie de Fibonacci (1, 2, 3, 5, 8, 13)** para asignar esfuerzo a cada ticket de trabajo basado en su complejidad y tiempo estimado.  
+
+Para cada ticket, indica:  
+
+- **Nombre:** (Título del ticket)  
+- **Descripción breve:** (Resumen del trabajo)  
+- **Puntos de historia asignados:** (1, 2, 3, 5, 8, 13)  
+- **Razón de la estimación:** (Breve justificación)  
+
+Genera una tabla con la lista de tickets y sus puntos de historia.  
+
+
+5️⃣ Prompt Mejorado para Generar un Backlog en HTML Tipo Jira
+
+Genera un backlog de producto en formato HTML con una tabla estructurada similar a Jira. 
+La tabla debe incluir las siguientes columnas: ID del ticket, Resumen, Tipo (Historia de Usuario, Tarea, Bug, Epic), Prioridad (Alta, Media, Baja), Estado (To Do, In Progress, Done), Asignado a (Miembro del equipo), Etiquetas (Backend, Frontend, QA, DevOps), y Esfuerzo en puntos de historia (escala Fibonacci). Utiliza colores para resaltar las prioridades: rojo para alta, amarillo para media y verde para baja. Asegúrate de que el HTML sea responsive y fácil de leer en un navegador.

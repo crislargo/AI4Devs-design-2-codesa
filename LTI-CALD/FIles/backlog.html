@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlog LTI - Jira Style</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .high { background-color: #ffcccc; }
+        .medium { background-color: #ffeb99; }
+        .low { background-color: #ccffcc; }
+    </style>
+</head>
+<body>
+    <h2>Backlog LTI - Jira Style</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Resumen</th>
+            <th>Tipo</th>
+            <th>Prioridad</th>
+            <th>Estado</th>
+            <th>Asignado a</th>
+            <th>Etiquetas</th>
+            <th>Esfuerzo</th>
+        </tr>
+        <tr class="high"><td>LTI-101</td><td>Implementar autenticación LTI</td><td>Historia de Usuario</td><td>Alta</td><td>To Do</td><td>Backend Team</td><td>Backend</td><td>8</td></tr>
+        <tr class="high"><td>LTI-102</td><td>Crear UI para login LTI</td><td>Historia de Usuario</td><td>Alta</td><td>To Do</td><td>Frontend Team</td><td>Frontend</td><td>5</td></tr>
+        <tr class="medium"><td>LTI-103</td><td>Sincronizar calificaciones</td><td>Historia de Usuario</td><td>Media</td><td>To Do</td><td>Backend Team</td><td>Backend</td><td>8</td></tr>
+        <tr class="medium"><td>LTI-104</td><td>Acceso a recursos externos</td><td>Historia de Usuario</td><td>Media</td><td>To Do</td><td>Backend Team</td><td>Backend</td><td>5</td></tr>
+        <tr class="low"><td>LTI-105</td><td>Generar reportes de actividad</td><td>Historia de Usuario</td><td>Baja</td><td>To Do</td><td>Data Team</td><td>Data</td><td>3</td></tr>
+        <tr class="high"><td>LTI-106</td><td>Configurar OAuth en Spring Security</td><td>Tarea</td><td>Alta</td><td>In Progress</td><td>Backend Team</td><td>Backend</td><td>5</td></tr>
+        <tr class="high"><td>LTI-107</td><td>Diseñar flujo de autenticación</td><td>Tarea</td><td>Alta</td><td>In Progress</td><td>UX Team</td><td>Frontend</td><td>3</td></tr>
+        <tr class="medium"><td>LTI-108</td><td>Pruebas de integración con LTI</td><td>Tarea</td><td>Media</td><td>To Do</td><td>QA Team</td><td>QA</td><td>8</td></tr>
+        <tr class="low"><td>LTI-109</td><td>Documentar API LTI</td><td>Tarea</td><td>Baja</td><td>To Do</td><td>Tech Writer</td><td>Docs</td><td>3</td></tr>
+        <tr class="high"><td>LTI-110</td><td>Error en autenticación con OAuth</td><td>Bug</td><td>Alta</td><td>In Progress</td><td>Backend Team</td><td>Backend</td><td>5</td></tr>
+    </table>
+</body>
+</html>
